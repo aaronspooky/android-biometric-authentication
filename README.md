@@ -1,5 +1,5 @@
 # Android Biometric Authentication
-Authentication using biometrics
+Authentication using biometrics with AndroidX
 
 ## Getting started
 MinSDK: 23
