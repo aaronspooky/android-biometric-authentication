@@ -10,7 +10,7 @@ For lower versions the ``notSupported`` method is invoked because the ``Fingerpr
 
 Step 1. Add the JitPack repository to your gradle file 
 
-```
+```gradle
 allprojects {
   repositories {
 		...
@@ -22,7 +22,7 @@ allprojects {
 
 Step 2. Add the dependency
 
-```
+```gradle
 dependencies {
 	        implementation 'com.github.aaronspooky:android-biometric-authentication:0.10'
 }
@@ -31,14 +31,14 @@ dependencies {
 ## Usage
 
 Step 1. Add ``BiometricCallback`` interface
-```
+```java
 public class MainActivity extends AppCompatActivity implements BiometricCallback {
 }
 ```
 
 Step 2. Add the following methods
 
-```
+```java
 // region Biometric Callbacks
 
     @Override
@@ -58,7 +58,7 @@ Step 2. Add the following methods
 
 Step 3. Add the ``BiometricManager`` builder
 
-```
+```java
 new BiometricManager.BiometricBuilder(this)
                     .setTitle("Any text")
                     .setSubtitle("Any text")
